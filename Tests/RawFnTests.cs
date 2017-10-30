@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SQLitePCL;
-using SQLitePCL.Functions;
+using SQLitePCL.Functions.Raw;
 
 namespace Tests
 {
@@ -219,7 +219,7 @@ namespace Tests
             raw.sqlite3_step(stmt);
             for (var i = 0; i < sql.Split(new[] { "COMPARE" }, StringSplitOptions.None).Length-1; i++)
             {
-                var result = raw.sqlite3_column_text(stmt, 0);
+                var result = raw.sqlite3_column_text(stmt, i);
                 Assert.IsTrue(result == "1");
             }
             

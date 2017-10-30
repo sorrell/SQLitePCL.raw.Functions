@@ -1,7 +1,7 @@
 ﻿using System;
 using SQLitePCL.core.Functions;
 
-namespace SQLitePCL.Functions
+namespace SQLitePCL.Functions.Raw
 {
     public static class RawFn
     {
