@@ -2,6 +2,8 @@
 
 These are extension functions for SQLite that can be added to a SQLitePCLRaw DB.
 
+See [the functions area of the ETLyte documentation](https://sorrell.github.io/etlyte) for further usage.
+
 ## How to Use
 
 ```
